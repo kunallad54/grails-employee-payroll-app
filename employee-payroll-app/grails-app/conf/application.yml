@@ -108,7 +108,10 @@ environments:
     development:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            driverClassName: com.mysql.jdbc.Driver
+            username: root
+            password: 'Kklad@2506'
+            url: jdbc:mysql://localhost:3306/emp_payroll_grails
     test:
         dataSource:
             dbCreate: update

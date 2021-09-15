@@ -1,24 +1,22 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Kunal
-  Date: 14-09-2021
-  Time: 12:55
+  User: Krunal
+  Date: 15-09-2021
+  Time: 17:22
 --%>
 
-<!-- Include Main Layout -->
 <meta name="layout" content="main"/>
 
 <div class="form-content">
-    <!-- Form -->
-%{--    <g:message code="employee" args="['Create']"/>--}%
 
-    <g:form class="form" controller="employee" action="save">
-        <g:render template="form"/>
-        <!-- Submit-Reset-Cancel Button -->
+    <g:form class="form" controller="employee" action="update">
+        <g:hiddenField name="id" value="${employee.id}"/>
+        <g:render template="form" model="[edit:'yes']"/>
+        <!-- Update-Reset-Cancel Button -->
         <div class="buttonParent">
             <g:link controller="employee" action="index" class="resetButton button cancelButton" ><g:message code="cancel"/></g:link>
             <div class="submit-reset">
-                <g:submitButton class="button submitButton" name="save" value="${g.message(code: "submit")}"/>
+                <g:submitButton class="button submitButton" name="update" value="${g.message(code: "update")}"/>
                 <button type="reset" class="resetButton button" id="resetButton"><g:message code="reset"/></button>
             </div>
         </div>

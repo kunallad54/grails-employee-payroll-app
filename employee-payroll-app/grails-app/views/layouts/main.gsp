@@ -15,7 +15,16 @@
 </head>
 
 <body>
-
+<header class="header-content header">
+    <div class="logo-content">
+        <g:img dir="../assets/logo/"
+               file="logo.png" alt="Logo Image" height="50"/>
+        <div class="logo-text-content">
+            <span class="emp-text">EMPLOYEE</span>
+            <span class="emp-text emp-payroll">PAYROLL</span>
+        </div>
+    </div>
+</header>
 
 
 <g:layoutBody/>
