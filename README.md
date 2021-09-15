@@ -1,4 +1,4 @@
-# grails-employee-payroll-app
+# Employee-Payroll-App
 
 ## PARTS :
 1. Employee Payroll's Frontend Developed
