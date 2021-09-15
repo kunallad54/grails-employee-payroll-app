@@ -5,26 +5,13 @@
   Time: 11:40
 --%>
 
-%{--<%@ page contentType="text/html;charset=UTF-8" %>--}%
-%{--<html>--}%
-%{--<head>--}%
-%{--    <title></title>--}%
-%{--</head>--}%
-
-%{--<body>--}%
-%{--<h1>Hello World</h1>--}%
-%{--</body>--}%
-%{--</html>--}%
-
-%{--Include Main Layout--}%
+<!-- Include Main Layout -->
 <meta name="layout" content="main"/>
 
 <header class="header-content header">
     <div class="logo-content">
         <g:img dir="../assets/logo/"
                file="logo.png" alt="Logo Image" height="50"/>
-%{--        <img src="../assets/logo/logo.png" alt="Logo Image">--}%
-
         <div class="logo-text-content">
             <span class="emp-text">EMPLOYEE</span>
             <span class="emp-text emp-payroll">PAYROLL</span>
@@ -42,8 +29,6 @@
             <g:img dir="../assets/icons/" file="add-24px.svg" alt=""/>
             <g:message code="Add User"/>
         </g:link>
-    %{--        <a class="add-button">--}%
-    %{--            <img src="../assets/icons/add-24px.svg" alt="">Add User</a>--}%
     </div>
 
     <div class="table-main">
@@ -59,13 +44,10 @@
                 <th>Start Date</th>
                 <th>Actions</th>
             </tr>
-
-
             <!-- Employee Details in Table Rows -->
             <tr>
                 <td>
                     <g:img class="profile" dir="../assets/profile-images/" file="Ellipse%20-2.png" alt="Profile"/>
-%{--                    <img class="profile" src="../assets/profile-images/Ellipse%20-2.png" alt="Profile">--}%
                 </td>
                 <td>Krunal Lad</td>
                 <td>Male</td>
@@ -78,10 +60,6 @@
                            file="delete-black-18dp.svg" alt="delete" />
                     <g:img (click)="update(employee)" dir="../assets/icons/"
                            file="create-black-18dp.svg" alt="edit" />
-%{--                    <img (click)="remove(emplpoyee.empId)"--}%
-%{--                         src="../assets/icons/delete-black-18dp.svg" alt="delete">--}%
-%{--                    <img (click)="update(emplpoyee)" src="../assets/icons/create-black-18dp.svg"--}%
-%{--                         alt="edit">--}%
                 </td>
             </tr>
 
